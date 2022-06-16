@@ -87,7 +87,7 @@ void UpdateMethodText(){
         break;
     case FRAME_RATE:
         DrawText(5,0,"Frame Rate");
-        DrawText(1,16,"Frame Rate: 30FPS");
+        DrawText(1,16,"Frame Rate: 20FPS");
         break;
     case COUNTER:
         DrawText(6,0,"Counter");

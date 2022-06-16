@@ -4,7 +4,6 @@ SET GBDK_HOME=C:/gbdk
 
 mkdir dist
 
-
 SET PNG2ASSET=%GBDK_HOME%/bin/png2asset.exe
 
 :: Sprites
