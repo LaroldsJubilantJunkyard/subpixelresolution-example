@@ -1,8 +1,8 @@
 dist/
 bin/
 .vscode/
-headers/gen/
-source/gen/
+
+*.gb
 
 # Prerequisites
 *.d
