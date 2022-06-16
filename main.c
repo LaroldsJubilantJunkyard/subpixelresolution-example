@@ -111,15 +111,9 @@ void UpdateTheMushroom(){
 
         // If the vertical distance is less than 17
         if(ABS(d)<17){
-            
-            if(marioDrawX>80){
-                mushroomY=-16;
-                mushroomX = 8+(DIV_REG+mushroomX)%144;
-            }
-            else {
-                mushroomY=-16;
-                mushroomX = 8+(DIV_REG+mushroomX)%144;
-            }
+         
+            mushroomY=-16;
+            mushroomX = 8+(DIV_REG+mushroomX)%144;
         }
     }
 
@@ -135,8 +129,8 @@ void UpdateTheMushroom(){
     move_metasprite(mushroom_metasprites[0],mario_TILE_COUNT,4,mushroomX,mushroomY+8);
 }
 
-uint8_t HandleInput(){
-    uint8_t movement = 0;
+int8_t HandleInput(){
+    int8_t movement = 0;
     if(joypadCurrent & J_LEFT){
         movement = -1;
         marioDirection=0;
